@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Çay Cat</title>
+<meta name="description" content="$CATEA — an Istanbul street cat who never says no to one more çay. Meme coin on Solana.">
+<meta property="og:title" content="Çay Cat ($CATEA)">
+<meta property="og:description" content="An Istanbul street cat who never says no to one more çay. Sip. Hold. Refill.">
+<meta property="og:image" content="https://vaybabayin.github.io/catea/banner.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@coinlits">
+<link rel="icon" type="image/png" href="logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Nunito:wght@400;600;800&display=swap">
+<style>
+:root{--cini:#1F4E79;--deep:#0F2A44;--tea:#B3261E;--cream:#FFF1DC;--tabby:#E8913A;--gold:#FFD27A;--ink:#2B1A14;--muted:#C9D6E3;color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--deep);color:var(--cream);font:17px/1.6 Nunito,system-ui,sans-serif;padding-inline:16px}
+.wrap{max-width:1040px;margin:0 auto}
+.disp{font-family:"Bagel Fat One",Nunito,system-ui,sans-serif;font-weight:400;letter-spacing:.5px;text-wrap:balance;line-height:1.05}
+nav{display:flex;justify-content:space-between;align-items:center;padding-block:20px;gap:12px;flex-wrap:wrap}
+nav .brand{font-size:24px;color:var(--gold)}
+nav .links{display:flex;gap:10px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 20px;border-radius:999px;border:3px solid var(--ink);font-weight:800;text-decoration:none;color:var(--ink);background:var(--gold);box-shadow:0 4px 0 var(--ink);transition:transform .15s,box-shadow .15s;cursor:pointer;font-size:16px;font-family:inherit}
+.btn:hover{transform:translateY(2px);box-shadow:0 2px 0 var(--ink)}
+.btn:focus-visible{outline:3px solid var(--cream);outline-offset:3px}
+.btn.ghost{background:var(--cream)}
+.btn.red{background:var(--tea);color:var(--cream)}
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:24px;align-items:center;padding-block:24px 56px}
+.hero h1{font-size:clamp(52px,9vw,104px);color:var(--cream);margin:0;text-shadow:0 5px 0 var(--ink)}
+.hero h1 span{color:var(--tabby)}
+.ticker{display:inline-block;margin:14px 0 10px;background:var(--tea);color:var(--cream);border:3px solid var(--ink);padding:4px 14px;border-radius:10px;font-weight:800;letter-spacing:2px}
+.hero p.lead{font-size:20px;max-width:30ch;color:var(--muted);margin:8px 0 24px}
+.art{position:relative;aspect-ratio:1;max-width:100%;border-radius:50%;background:var(--cini);overflow:hidden;border:4px solid var(--ink)}
+.art svg{width:100%;height:100%;display:block}
+.art .steam{animation:bob 4s ease-in-out infinite;transform-origin:50% 90%}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+@media (prefers-reduced-motion:reduce){.art .steam{animation:none}}
+.ca{display:flex;gap:10px;align-items:center;flex-wrap:wrap;background:#16324F;border:2px dashed var(--muted);border-radius:14px;padding:12px 14px;max-width:560px}
+.ca code{font:600 15px/1.4 ui-monospace,Menlo,monospace;color:var(--gold);word-break:break-all;flex:1;min-width:0}
+.ca small{display:block;color:var(--muted);font-size:12px;letter-spacing:1.5px;text-transform:uppercase;width:100%}
+section{padding-block:48px}
+h2{font-size:clamp(34px,5vw,52px);margin:0 0 20px;color:var(--gold)}
+.lore{background:var(--cream);color:var(--ink);border-radius:28px;padding:36px clamp(20px,4vw,48px);border:4px solid var(--ink)}
+.lore h2{color:var(--tea)}
+.lore p{max-width:62ch;font-size:19px;margin:0 0 14px}
+.lore .quote{font-family:"Bagel Fat One",Nunito,sans-serif;font-size:clamp(24px,3.4vw,34px);color:var(--cini);margin-top:20px;line-height:1.2}
+.moods{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.mood{background:#16324F;border-radius:18px;padding:20px;border:2px solid #2E6DA4}
+.mood b{display:block;font-size:13px;letter-spacing:2px;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
+.mood span{font-family:"Bagel Fat One",Nunito,sans-serif;font-size:24px;color:var(--cream)}
+.up{color:#7BD88F}.down{color:#FF8A80}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;counter-reset:s}
+.step{background:var(--cini);border-radius:18px;padding:20px;border:3px solid var(--ink);counter-increment:s}
+.step::before{content:counter(s);display:grid;place-items:center;width:40px;height:40px;border-radius:50%;background:var(--tabby);color:var(--ink);font-family:"Bagel Fat One",sans-serif;font-size:22px;border:3px solid var(--ink);margin-bottom:10px}
+.step h3{margin:0 0 6px;font-size:18px}
+.step p{margin:0;color:var(--muted);font-size:15px}
+footer{border-top:2px solid #2E6DA4;padding-block:28px 40px;color:var(--muted);font-size:14px}
+footer p{max-width:70ch}
+.toast{position:fixed;left:50%;bottom:calc(20px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--gold);color:var(--ink);font-weight:800;padding:10px 18px;border-radius:999px;border:3px solid var(--ink)}
+@media (max-width:820px){.hero{grid-template-columns:1fr}.art{max-width:380px;margin:0 auto;order:-1}.moods{grid-template-columns:1fr}.steps{grid-template-columns:1fr 1fr}}
+@media (max-width:460px){.steps{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute"><defs>
+<symbol id="glassP" viewBox="300 40 400 840" overflow="visible">
+  <clipPath id="gclipP"><path d="M335 262 C335 420,390 470,395 560 C400 650,342 700,352 788 Q357 816,390 816 L610 816 Q643 816,648 788 C658 700,600 650,605 560 C610 470,665 420,665 262 Z"/></clipPath>
+  <path d="M335 262 C335 420,390 470,395 560 C400 650,342 700,352 788 Q357 816,390 816 L610 816 Q643 816,648 788 C658 700,600 650,605 560 C610 470,665 420,665 262 Z" fill="#FDF6EE"/>
+  <g clip-path="url(#gclipP)">
+    <rect x="300" y="318" width="400" height="520" fill="#B3261E"/>
+    <ellipse cx="500" cy="318" rx="175" ry="16" fill="#D8532F"/>
+    <path d="M372 350 C380 450,420 500,420 560" stroke="#fff" stroke-opacity=".35" stroke-width="20" fill="none" stroke-linecap="round"/>
+  </g>
+  <path d="M335 262 C335 420,390 470,395 560 C400 650,342 700,352 788 Q357 816,390 816 L610 816 Q643 816,648 788 C658 700,600 650,605 560 C610 470,665 420,665 262" fill="none" stroke="#2B1A14" stroke-width="26" stroke-linejoin="round"/>
+  <ellipse cx="500" cy="262" rx="165" ry="18" fill="none" stroke="#2B1A14" stroke-width="22"/>
+  <path d="M500 225 C465 190,540 165,505 128 C478 100,525 80,512 52" stroke="#FFFFFF" stroke-width="26" fill="none" stroke-linecap="round"/>
+</symbol>
+<symbol id="cat" viewBox="170 140 660 840" overflow="visible">
+  <path d="M690 900 C820 900,850 760,790 700 C760 670,730 700,760 730 C800 770,770 850,690 850" fill="#E8913A" stroke="#2B1A14" stroke-width="14" stroke-linejoin="round"/>
+  <ellipse cx="500" cy="790" rx="215" ry="180" fill="#E8913A" stroke="#2B1A14" stroke-width="14"/>
+  <ellipse cx="500" cy="820" rx="120" ry="130" fill="#FFF1DC"/>
+  <path d="M300 740 q30 10 40 40 M700 740 q-30 10 -40 40 M295 820 q30 5 40 35 M705 820 q-30 5 -40 35" stroke="#B8621C" stroke-width="14" fill="none" stroke-linecap="round"/>
+  <ellipse cx="410" cy="955" rx="70" ry="30" fill="#FFF1DC" stroke="#2B1A14" stroke-width="12"/>
+  <ellipse cx="590" cy="955" rx="70" ry="30" fill="#FFF1DC" stroke="#2B1A14" stroke-width="12"/>
+  <path d="M300 360 L305 175 L440 285 Z" fill="#E8913A" stroke="#2B1A14" stroke-width="14" stroke-linejoin="round"/>
+  <path d="M700 360 L695 175 L560 285 Z" fill="#E8913A" stroke="#2B1A14" stroke-width="14" stroke-linejoin="round"/>
+  <path d="M328 320 L330 230 L400 290 Z" fill="#F4A3A0"/><path d="M672 320 L670 230 L600 290 Z" fill="#F4A3A0"/>
+  <ellipse cx="500" cy="440" rx="240" ry="185" fill="#E8913A" stroke="#2B1A14" stroke-width="14"/>
+  <path d="M470 272 v45 M500 265 v55 M530 272 v45" stroke="#B8621C" stroke-width="14" stroke-linecap="round"/>
+  <path d="M262 430 h40 M268 470 h34 M738 430 h-40 M732 470 h-34" stroke="#B8621C" stroke-width="12" stroke-linecap="round"/>
+  <ellipse cx="500" cy="520" rx="100" ry="70" fill="#FFF1DC"/>
+  <g stroke="#2B1A14" stroke-width="10" fill="#FFF3E2"><path d="M378 440 A36 36 0 0 0 450 440 Z"/><path d="M550 440 A36 36 0 0 0 622 440 Z"/></g>
+  <circle cx="416" cy="452" r="11" fill="#2B1A14"/><circle cx="588" cy="452" r="11" fill="#2B1A14"/>
+  <path d="M372 440 H456 M544 440 H628" stroke="#2B1A14" stroke-width="13" stroke-linecap="round"/>
+  <ellipse cx="365" cy="505" rx="30" ry="15" fill="#F4A3A0" opacity=".8"/><ellipse cx="635" cy="505" rx="30" ry="15" fill="#F4A3A0" opacity=".8"/>
+  <path d="M485 488 h30 l-15 16 z" fill="#F4A3A0" stroke="#2B1A14" stroke-width="6" stroke-linejoin="round"/>
+  <path d="M470 518 Q485 538 500 518 Q515 538 530 518 M500 505 v13" stroke="#2B1A14" stroke-width="8" fill="none" stroke-linecap="round"/>
+  <path d="M420 512 L320 500 M420 528 L325 540 M580 512 L680 500 M580 528 L675 540" stroke="#2B1A14" stroke-width="5" stroke-linecap="round"/>
+  <use href="#glassP" x="430" y="560" width="140" height="294"/>
+  <ellipse cx="438" cy="760" rx="42" ry="34" fill="#E8913A" stroke="#2B1A14" stroke-width="12"/>
+  <ellipse cx="562" cy="760" rx="42" ry="34" fill="#E8913A" stroke="#2B1A14" stroke-width="12"/>
+  <path d="M425 770 v14 M445 772 v14 M555 772 v14 M575 770 v14" stroke="#2B1A14" stroke-width="6" stroke-linecap="round"/>
+</symbol><pattern id="cini" width="80" height="80" patternUnits="userSpaceOnUse">
+<path d="M40 8 L50 30 L72 40 L50 50 L40 72 L30 50 L8 40 L30 30 Z" fill="#FFFFFF" opacity=".07"/>
+<circle cx="0" cy="0" r="6" fill="#fff" opacity=".07"/><circle cx="80" cy="80" r="6" fill="#fff" opacity=".07"/><circle cx="80" cy="0" r="6" fill="#fff" opacity=".07"/><circle cx="0" cy="80" r="6" fill="#fff" opacity=".07"/></pattern></defs></svg>
+<div class="wrap">
+<nav><div class="brand disp">Çay Cat</div>
+<div class="links"><a class="btn ghost" href="https://x.com/coinlits" target="_blank" rel="noopener">X</a><a class="btn ghost" href="https://t.me/cateaw" target="_blank" rel="noopener">Telegram</a><a class="btn" href="https://pump.fun/" target="_blank" rel="noopener">Buy on pump.fun</a></div></nav>
+
+<header class="hero">
+<div>
+<h1 class="disp">One more <span>çay</span>.</h1>
+<div class="ticker">$CATEA · SOLANA</div>
+<p class="lead">An Istanbul street cat who has never said no to one more çay. Sip. Hold. Refill.</p>
+<div class="ca"><small>Contract address</small><code id="ca">Coming soon, brewing on pump.fun</code><button class="btn red" id="copy" type="button">Copy</button></div>
+</div>
+<div class="art" aria-label="An orange tabby cat holding a tulip glass of Turkish tea">
+<svg viewBox="0 0 1000 1000" role="img"><rect width="1000" height="1000" fill="url(#cini)"/><circle cx="500" cy="540" r="410" fill="#2E6DA4" opacity=".55"/><g class="steam"><use href="#cat" x="130" y="90" width="740" height="880"/></g></svg>
+</div>
+</header>
+
+<section class="lore">
+<h2 class="disp">The lore</h2>
+<p>Everyone knows the real owners of Istanbul are the cats. People just pay the rent.</p>
+<p>Every evening one tabby sits by the Bosphorus with a tulip glass in its paws. The ferries come and go, the chart goes up and down, and someone always asks the same question: “one more çay?”</p>
+<p>The answer has never been no. $CATEA is that answer, on-chain.</p>
+<div class="quote">“There is no such thing as the last çay.”</div>
+</section>
+
+<section>
+<h2 class="disp">Market mood, according to the cat</h2>
+<div class="moods">
+<div class="mood"><b class="up">Green candle</b><span>One more çay.</span></div>
+<div class="mood"><b class="down">Red candle</b><span>One more çay.</span></div>
+<div class="mood"><b>Sideways for 3 days</b><span>Refill, please.</span></div>
+</div>
+</section>
+
+<section>
+<h2 class="disp">How to get $CATEA</h2>
+<div class="steps">
+<div class="step"><h3>Get a wallet</h3><p>Install a Solana wallet such as Phantom or Solflare.</p></div>
+<div class="step"><h3>Add SOL</h3><p>Buy SOL on an exchange and send it to your wallet.</p></div>
+<div class="step"><h3>Open pump.fun</h3><p>Paste the contract address above. Check it matches this page.</p></div>
+<div class="step"><h3>Pour a glass</h3><p>Swap SOL for $CATEA. Then have one more çay.</p></div>
+</div>
+</section>
+
+<footer>
+<p><b>$CATEA is a meme coin with no intrinsic value and no expectation of financial return.</b> There is no team roadmap, no promises and nothing here is financial advice. Meme coins are extremely volatile; only use what you can afford to lose. Always verify the contract address from our official X account.</p>
+<p>© Çay Cat. Brewed in Istanbul.</p>
+</footer>
+</div>
+<div class="toast" id="toast" hidden>Copied</div>
+<script>
+const b=document.getElementById('copy'),ca=document.getElementById('ca'),t=document.getElementById('toast');
+b.addEventListener('click',async()=>{
+  const txt=ca.textContent.trim();
+  if(txt.startsWith('Coming soon')){t.textContent='Contract address not live yet';}
+  else{try{await navigator.clipboard.writeText(txt);t.textContent='Copied';}catch(e){const r=document.createRange();r.selectNodeContents(ca);const s=getSelection();s.removeAllRanges();s.addRange(r);t.textContent='Selected, press Ctrl+C';}}
+  t.hidden=false;clearTimeout(window._tt);window._tt=setTimeout(()=>t.hidden=true,1800);
+});
+</script>
+</body>
+</html>
